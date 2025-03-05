@@ -2,52 +2,52 @@ document.addEventListener('DOMContentLoaded', () => {
   //list all card options
   const cardArray = [
     {
-      name: 'fries',
-      img: 'images/fries.png'
+      name: 'vegeta',
+      img: 'images/vegeta1.png'
     },
     {
-      name: 'cheeseburger',
-      img: 'images/cheeseburger.png'
+      name: 'breeus',
+      img: 'images/breeus1.png'
     },
     {
-      name: 'ice-cream',
-      img: 'images/ice-cream.png'
+      name: 'freeza',
+      img: 'images/freeza1.png'
     },
     {
-      name: 'pizza',
-      img: 'images/pizza.png'
+      name: 'booo',
+      img: 'images/booo1.png'
     },
     {
-      name: 'milkshake',
-      img: 'images/milkshake.png'
+      name: 'goku',
+      img: 'images/goku1.png'
     },
     {
-      name: 'hotdog',
-      img: 'images/hotdog.png'
+      name: 'gohan',
+      img: 'images/gohan1.png'
     },
     {
-      name: 'fries',
-      img: 'images/fries.png'
+      name: 'vegeta',
+      img: 'images/vegeta1.png'
     },
     {
-      name: 'cheeseburger',
-      img: 'images/cheeseburger.png'
+      name: 'breeus',
+      img: 'images/breeus1.png'
     },
     {
-      name: 'ice-cream',
-      img: 'images/ice-cream.png'
+      name: 'freeza',
+      img: 'images/freeza1.png'
     },
     {
-      name: 'pizza',
-      img: 'images/pizza.png'
+      name: 'booo',
+      img: 'images/booo1.png'
     },
     {
-      name: 'milkshake',
-      img: 'images/milkshake.png'
+      name: 'goku',
+      img: 'images/goku1.png'
     },
     {
-      name: 'hotdog',
-      img: 'images/hotdog.png'
+      name: 'gohan',
+      img: 'images/gohan1.png'
     }
   ]
 

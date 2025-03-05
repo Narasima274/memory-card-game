@@ -1,6 +1,18 @@
 .grid {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
-  width: 400px;
-  height: 300px;
+  gap: 2px;
+  width: 100%;
+  max-width: 800px;
+  /* height: 300px; */
+}
+
+.grid img{
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(4, 1fr);
 }
