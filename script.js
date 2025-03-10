@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  //list all card options
   const cardArray = [
     {
       name: 'vegeta',
@@ -65,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('img')
       card.setAttribute('src', 'images/blank.png')
       card.setAttribute('data-id', i)
+      card.setAttribute('alt', ``)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
     }
