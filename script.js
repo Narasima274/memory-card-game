@@ -54,12 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
+  const restartButton = document.getElementById('restart')
+  const restartContainer = restartButton.parentElement;
   let cardsChosen = []
   let cardsChosenId = []
   let cardsWon = []
 
   //create your board
   function createBoard() {
+    grid.innerHTML = '';
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img')
       card.setAttribute('src', 'images/blank.png')
@@ -68,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
     }
+    grid.style.display = "grid";
+    restartButton.style.display = "none"; 
   }
 
   //check for matches
@@ -96,8 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
+
     if  (cardsWon.length === cardArray.length/2) {
       resultDisplay.textContent = 'Congratulations! You found them all!'
+      grid.style.display = "none";
+      restartButton.style.display = "block";
     }
   }
 
@@ -112,5 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  createBoard()
+  restartButton.addEventListener('click', () => {
+    cardsWon = [];
+    resultDisplay.textContent = '',
+    createBoard();
+  })
+
 })
